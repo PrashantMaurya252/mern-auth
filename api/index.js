@@ -13,8 +13,8 @@ mongoose.connect(process.env.MONGO_URL).then(()=>{
 })
 const app=express();
 app.use(express.json());
-app .listen(5000,()=>{
-    console.log('app is listening on 5000')
+app .listen(3000,()=>{
+    console.log('app is listening on 3000')
 })
 
 app.use('/api/user',userRoute);
